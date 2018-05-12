@@ -9,7 +9,12 @@
 import UIKit
 
 class ContactViewController: UIViewController {
-
+    
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var numberTextField: UITextField!
+    @IBOutlet weak var commentTextField: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -25,6 +30,21 @@ class ContactViewController: UIViewController {
         self.navigationController?.navigationBar.isHidden = false
         self.navigationController?.tabBarController?.tabBar.isHidden = false
     }
+    
+    
+    @IBAction func clearInfo(_ sender: UIButton) {
+        nameTextField.text = ""
+        emailTextField.text = ""
+        numberTextField.text = ""
+        commentTextField.text = ""
+    }
+    
+    @IBAction func sendEmail(_ sender: UIButton) {
+        print("...sending email")
+    }
+    
+    
+    
     /*
     // MARK: - Navigation
 

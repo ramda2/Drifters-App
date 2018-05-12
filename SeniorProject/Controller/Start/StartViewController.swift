@@ -16,6 +16,8 @@ class StartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         continueButton.layer.cornerRadius = 10.0
+        userAcctButton.layer.cornerRadius = 10.0
+        navigationController?.navigationBar.isHidden = true
         // Do any additional setup after loading the view.
     }
 
