@@ -33,11 +33,6 @@ class ShopViewController: UIViewController, UICollectionViewDataSource, UICollec
         })
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationController?.navigationBar.isHidden = false
-    }
-
     func filterByType(searchType: String){
         filteredProducts = products.filter({ (prod) -> Bool in
             let tmp: NSString = prod.type as NSString

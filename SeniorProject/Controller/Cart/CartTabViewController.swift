@@ -66,6 +66,7 @@ class CartTabViewController: UIViewController, UITableViewDataSource, UITableVie
         PayPalMobile.preconnect(withEnvironment: environment)
     }
     
+
     
     @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
         getCart()

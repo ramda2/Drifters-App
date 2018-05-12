@@ -20,11 +20,6 @@ class AccountViewController: UIViewController, UITableViewDelegate, UITableViewD
         tableView.dataSource = self
         // Do any additional setup after loading the view.
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-//        self.navigationController?.navigationBar.isHidden = true
-    }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return settings.count
@@ -49,10 +44,8 @@ class AccountViewController: UIViewController, UITableViewDelegate, UITableViewD
             break
         case 1:
             //log in/register
-            //presentViewController(identifier: "segmentedVC")
-            if let vc = storyboard?.instantiateViewController(withIdentifier: "mainVC") as? UIViewController {
-                tabBarController?.navigationController?.present(vc, animated: false, completion: nil)
-            }
+            let vc = storyboard?.instantiateViewController(withIdentifier: "mainVC")
+            tabBarController?.navigationController?.present(vc!, animated: false, completion: nil)
             break
         case 2:
             if let vc = storyboard?.instantiateViewController(withIdentifier: "resetVC") as? PasswordPopUpViewController {
@@ -63,21 +56,14 @@ class AccountViewController: UIViewController, UITableViewDelegate, UITableViewD
             break
         case 3:
             let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-            if let vc = storyboard.instantiateViewController(withIdentifier: "aboutVC") as? UIViewController{
-                self.navigationController?.pushViewController(vc, animated: true)
-            }
-           
+            let vc = storyboard.instantiateViewController(withIdentifier: "aboutVC")
+            navigationController?.pushViewController(vc, animated: true)
             break
         case 4:
             let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
             if let vc = storyboard.instantiateViewController(withIdentifier: "contactVC") as? ContactViewController{
-                self.navigationController?.pushViewController(vc, animated: true)
+                navigationController?.pushViewController(vc, animated: true)
             }
-//            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-//            let vc = storyboard.instantiateViewController(withIdentifier: "contactVC")
-//            self.tabBarController?.hidesBottomBarWhenPushed = false
-//            self.tabBarController?.navigationController?.pushViewController(vc, animated: true)
-//            self.navigationController?.present(vc, animated: false, completion: nil)
             break
         case 5:
             ShowAlert(title: "Logout", message: "Are you sure you want to logout?")
@@ -105,7 +91,7 @@ class AccountViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     private func presentViewController(identifier: String){
         let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: identifier)
-        self.tabBarController?.navigationController?.present(viewController, animated: false, completion: nil)
+        tabBarController?.navigationController?.present(viewController, animated: false, completion: nil)
 //        self.present(viewController, animated: true, completion: nil)
     }
     

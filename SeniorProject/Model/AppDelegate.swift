@@ -13,26 +13,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-//        UINavigationBar.appearance().barTintColor = UIColor.white
-//        UINavigationBar.appearance().tintColor = UIColor.white
         UIApplication.shared.statusBarStyle = .lightContent // .default
-//        UINavigationBar.appearance().barStyle = .blackOpaque
-        // Sets background to a blank/empty image
-//        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
-        // Sets shadow (line below the bar) to a blank image
-//        UINavigationBar.appearance().shadowImage = UIImage()
-        // Sets the translucent background color
-//        UINavigationBar.appearance().backgroundColor = .clear
-        // Set translucent. (Default value is already true, so this can be removed if desired.)
-//        UINavigationBar.appearance().isTranslucent = true
+        let attributes = [NSAttributedStringKey.font: UIFont(name: "HelveticaNeue-Light", size: 25)!]
+        UINavigationBar.appearance().titleTextAttributes = attributes
         
         //TODO: - Enter your credentials
         PayPalMobile .initializeWithClientIds(forEnvironments: [PayPalEnvironmentProduction: "AVsWhabo5wgg9x2XwHy8tyjZhtaR6snJHv6F9CddvBAvslnVAPocGF4t1qfm4o5IwftTzYsyBIKwZWKW",
                                                                 PayPalEnvironmentSandbox: "angelieramdial@gmail.com"])
-        
         return true
     }
 

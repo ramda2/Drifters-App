@@ -156,32 +156,21 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		FD06393D207AD226002F11E8 /* Cells */ = {
+		FD179BB6208AA14C0082FFC3 /* Search */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
-		FD179BB6208AA14C0082FFC3 /* Search [FINISHED] */ = {
-			isa = PBXGroup;
-			children = (
-				FD179BB7208AC4A80082FFC3 /* DefaultPicksTableViewCell.swift */,
-				FD179BB9208AC5190082FFC3 /* SearchedTableViewCell.swift */,
+				FDF17C1520A738D800E56C25 /* Table Data */,
 				FD179BBB208AC57A0082FFC3 /* SearchProductViewController.swift */,
 			);
-			path = "Search [FINISHED]";
+			path = Search;
 			sourceTree = "<group>";
 		};
 		FD179BC1208FBAAE0082FFC3 /* Shop */ = {
 			isa = PBXGroup;
 			children = (
-				FD761FD02062E375007B0DF7 /* DefaultTableViewCell.swift */,
-				FD9401B920675A9D009972C0 /* ShopHeaderCollectionReusableView.swift */,
-				FD9401B7206756E0009972C0 /* ShopCollectionViewCell.swift */,
+				FDF17C1420A7389600E56C25 /* Table Data */,
 				FD9401BD206810EB009972C0 /* ShopViewController.swift */,
 				FD9401C620688728009972C0 /* FilterViewController.swift */,
-				FD9401C420687E59009972C0 /* FilterCollectionViewCell.swift */,
 				FD06393E207AD2AC002F11E8 /* ProductPopUpViewController.swift */,
 			);
 			path = Shop;
@@ -230,9 +219,9 @@
 			children = (
 				FD6E930F207B0887006E2E44 /* TODO.swift */,
 				FD537A042048F249002066BC /* Info.plist */,
-				FD5379FD2048E6A9002066BC /* Controller */,
-				FD5379FC2048E6A3002066BC /* View */,
 				FD5379FB2048E69A002066BC /* Model */,
+				FD5379FC2048E6A3002066BC /* View */,
+				FD5379FD2048E6A9002066BC /* Controller */,
 				FD5379E82044C8D6002066BC /* Assets.xcassets */,
 				FD0938A6209574C5006CF747 /* SeniorProject-Bridging-Header.h */,
 			);
@@ -245,7 +234,6 @@
 				FD5379E12044C8D6002066BC /* AppDelegate.swift */,
 				FD9401C1206876BB009972C0 /* Helpers */,
 				FDC1FBC72061725A0029C417 /* Objects */,
-				FD06393D207AD226002F11E8 /* Cells */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -262,12 +250,11 @@
 		FD5379FD2048E6A9002066BC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				FD938E592065BFCF00B25C6B /* TabBarViewController.swift */,
+				FDFE8B8B20858921008B4E01 /* Start */,
 				FD179BC3208FBB630082FFC3 /* Account */,
 				FD179BC2208FBAC20082FFC3 /* Cart */,
 				FD179BC1208FBAAE0082FFC3 /* Shop */,
-				FD179BB6208AA14C0082FFC3 /* Search [FINISHED] */,
-				FDFE8B8B20858921008B4E01 /* Start */,
+				FD179BB6208AA14C0082FFC3 /* Search */,
 				FD5421D720643CD8000CCF49 /* Login */,
 			);
 			path = Controller;
@@ -276,10 +263,9 @@
 		FD5421D720643CD8000CCF49 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				FD761FD420631E21007B0DF7 /* SegmentedViewController.swift */,
+				FDF17C1620A738E800E56C25 /* Layout */,
 				FD761FDA2063348D007B0DF7 /* PasswordPopUpViewController.swift */,
 				FD5379F520472463002066BC /* RegistrationViewController.swift */,
-				FD761FD620632041007B0DF7 /* CustomSegmentControl.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -306,11 +292,41 @@
 			path = Objects;
 			sourceTree = "<group>";
 		};
+		FDF17C1420A7389600E56C25 /* Table Data */ = {
+			isa = PBXGroup;
+			children = (
+				FD761FD02062E375007B0DF7 /* DefaultTableViewCell.swift */,
+				FD9401B920675A9D009972C0 /* ShopHeaderCollectionReusableView.swift */,
+				FD9401C420687E59009972C0 /* FilterCollectionViewCell.swift */,
+				FD9401B7206756E0009972C0 /* ShopCollectionViewCell.swift */,
+			);
+			path = "Table Data";
+			sourceTree = "<group>";
+		};
+		FDF17C1520A738D800E56C25 /* Table Data */ = {
+			isa = PBXGroup;
+			children = (
+				FD179BB9208AC5190082FFC3 /* SearchedTableViewCell.swift */,
+				FD179BB7208AC4A80082FFC3 /* DefaultPicksTableViewCell.swift */,
+			);
+			path = "Table Data";
+			sourceTree = "<group>";
+		};
+		FDF17C1620A738E800E56C25 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				FD761FD420631E21007B0DF7 /* SegmentedViewController.swift */,
+				FD761FD620632041007B0DF7 /* CustomSegmentControl.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
 		FDFE8B8B20858921008B4E01 /* Start */ = {
 			isa = PBXGroup;
 			children = (
 				FDA6E6F5206729A4002BDE6B /* StartViewController.swift */,
 				FD5379F32044CBAD002066BC /* LoginViewController.swift */,
+				FD938E592065BFCF00B25C6B /* TabBarViewController.swift */,
 			);
 			path = Start;
 			sourceTree = "<group>";
