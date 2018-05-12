@@ -1,0 +1,34 @@
+PODS:
+  - CardIO (5.4.1)
+  - PayPal-iOS-SDK (2.18.0):
+    - PayPal-iOS-SDK/CardIO (= 2.18.0)
+    - PayPal-iOS-SDK/Core (= 2.18.0)
+  - PayPal-iOS-SDK/CardIO (2.18.0):
+    - CardIO (~> 5.4.1)
+  - PayPal-iOS-SDK/Core (2.18.0)
+  - SDWebImage (4.1.2):
+    - SDWebImage/Core (= 4.1.2)
+  - SDWebImage/Core (4.1.2)
+  - SwiftyJSON (3.0.0)
+
+DEPENDENCIES:
+  - PayPal-iOS-SDK
+  - SDWebImage (~> 4.0)
+  - SwiftyJSON (= 3.0.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - CardIO
+    - PayPal-iOS-SDK
+    - SDWebImage
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
+  PayPal-iOS-SDK: 3fc74982a68d54eeaf39e09f507f279dc2291860
+  SDWebImage: cb6f9f266a9977741efcbc21e618e8be3734c774
+  SwiftyJSON: f57b2b44bc166617372d1c70773591fe9f0f5fd4
+
+PODFILE CHECKSUM: 2df638883c5489c9488a71cdfd9cdbb8a99499b4
+
+COCOAPODS: 1.5.0
