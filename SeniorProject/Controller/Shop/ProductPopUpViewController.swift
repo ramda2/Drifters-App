@@ -26,6 +26,9 @@ class ProductPopUpViewController: UIViewController, UIGestureRecognizerDelegate 
         productPopUpView.layer.cornerRadius = 10
         productPopUpView.layer.masksToBounds = true
         addButton.layer.cornerRadius = 10
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         if let product = selectedProduct {
             productName.text = product.name
             productPrice.text = "$ ".appending(product.price.description)
@@ -50,27 +53,32 @@ class ProductPopUpViewController: UIViewController, UIGestureRecognizerDelegate 
     }
     
     @IBAction func addToCart(_ sender: UIButton) {
-        if let product = selectedProduct {
-            product.quantity = Int(productQuantity.text!)!
-            Helpers.checkQuantity(model: product, completion: { (status, message) in
-                if (!status){
-                    if let msg = message {
-                        self.ShowAlert(title: "Warning", message: msg)
+        if KeychainWrapper.standard.bool(forKey: "Guest")!{
+            ShowLogInAlert(title: "Alert", message: "Please sign in or register to continue.")
+        }
+        else {
+                if let product = selectedProduct {
+                product.quantity = Int(productQuantity.text!)!
+                Helpers.checkQuantity(model: product, completion: { (status, message) in
+                    if (!status){
+                        if let msg = message {
+                            self.ShowAlert(title: "Warning", message: msg)
+                        }
                     }
-                }
-                else {
-                    Helpers.addItem_Cart(model: product, completion: { (status, alert) in
-                        if (!status){
-                            if let msg = alert {
-                                self.ShowAlert(title: "Warning", message: msg)
+                    else {
+                        Helpers.addItem_Cart(model: product, completion: { (status, alert) in
+                            if (!status){
+                                if let msg = alert {
+                                    self.ShowAlert(title: "Warning", message: msg)
+                                }
                             }
-                        }
-                        else {
-                            self.dismiss(animated: false, completion: nil)
-                        }
-                    })
-                }
-            })
+                            else {
+                                self.dismiss(animated: false, completion: nil)
+                            }
+                        })
+                    }
+                })
+            }
         }
     }
     
@@ -86,7 +94,6 @@ class ProductPopUpViewController: UIViewController, UIGestureRecognizerDelegate 
 //                print("outside")
             }
 //            productPopUpView.endEditing(true)
-
         }
     }
     
@@ -109,6 +116,23 @@ class ProductPopUpViewController: UIViewController, UIGestureRecognizerDelegate 
         // add an action (button)
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action: UIAlertAction) -> Void in
         }))
+        // show the alert
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    private func ShowLogInAlert(title: String, message: String){
+        // create the alert
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        
+        // add an action (button)
+        alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel, handler: {(action: UIAlertAction) -> Void in
+        }))
+        // add an action (button)
+        alert.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default, handler: {(action: UIAlertAction) -> Void in
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "mainVC")
+            self.present(vc!, animated: false, completion: nil)
+        }))
+   
         // show the alert
         self.present(alert, animated: true, completion: nil)
     }

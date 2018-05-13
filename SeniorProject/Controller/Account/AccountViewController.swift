@@ -12,7 +12,8 @@ class AccountViewController: UIViewController, UITableViewDelegate, UITableViewD
 
     @IBOutlet weak var tableView: UITableView!
     
-    private let settings:[String] = ["Edit Account Information", "Log In/Register", "Reset Password", "About Drifters", "Contact Us", "Log out"]
+    private let user_settings:[String] = ["Edit Account Information", "Reset Password", "About Drifters", "Contact Us", "Log out"]
+    private let guest_settings:[String] = ["Log In/Register", "About Drifters", "Contact Us"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +23,10 @@ class AccountViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return settings.count
+        if KeychainWrapper.standard.bool(forKey: "Guest")!{
+            return guest_settings.count
+        }
+        return user_settings.count
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -31,7 +35,14 @@ class AccountViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "accountSetting", for: indexPath) as? AccountTableViewCell {
-            cell.settingLabel.text = settings[indexPath.row]
+            
+            if KeychainWrapper.standard.bool(forKey: "Guest")!{
+                cell.settingLabel.text = guest_settings[indexPath.row]
+            }
+            else {
+                cell.settingLabel.text = user_settings[indexPath.row]
+            }
+            
             return cell
         }
         return UITableViewCell()
@@ -39,37 +50,63 @@ class AccountViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //        print("Tapped - \(settings[indexPath.row])")
-        switch (indexPath.row){
-        case 0:
-            break
-        case 1:
-            //log in/register
-            let vc = storyboard?.instantiateViewController(withIdentifier: "mainVC")
-            tabBarController?.navigationController?.present(vc!, animated: false, completion: nil)
-            break
-        case 2:
-            if let vc = storyboard?.instantiateViewController(withIdentifier: "resetVC") as? PasswordPopUpViewController {
-                vc.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
-                vc.preferredContentSize = CGSize(width: view.frame.width/2, height: view.frame.height/2)
-                tabBarController?.navigationController?.present(vc, animated: false, completion: nil)
-            }
-            break
-        case 3:
-            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-            let vc = storyboard.instantiateViewController(withIdentifier: "aboutVC")
-            navigationController?.pushViewController(vc, animated: true)
-            break
-        case 4:
-            let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
-            if let vc = storyboard.instantiateViewController(withIdentifier: "contactVC") as? ContactViewController{
+        if KeychainWrapper.standard.bool(forKey: "Guest")!{
+            switch (indexPath.row){
+            case 0:
+                //log in/register
+                let vc = storyboard?.instantiateViewController(withIdentifier: "mainVC")
+                tabBarController?.navigationController?.present(vc!, animated: false, completion: nil)
+                break
+            case 1:
+                //about us
+                let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+                let vc = storyboard.instantiateViewController(withIdentifier: "aboutVC")
                 navigationController?.pushViewController(vc, animated: true)
+                break
+            case 2:
+                //contact us
+                let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+                if let vc = storyboard.instantiateViewController(withIdentifier: "contactVC") as? ContactViewController{
+                    navigationController?.pushViewController(vc, animated: true)
+                }
+                break
+            default:
+                break
             }
-            break
-        case 5:
-            ShowAlert(title: "Logout", message: "Are you sure you want to logout?")
-            
-        default:
-            break
+        }
+        else {
+            switch (indexPath.row){
+            case 0:
+                break
+            case 1:
+                //reset password
+                if let vc = storyboard?.instantiateViewController(withIdentifier: "resetVC") as? PasswordPopUpViewController {
+                    vc.modalPresentationStyle = UIModalPresentationStyle.overCurrentContext
+                    vc.preferredContentSize = CGSize(width: view.frame.width/2, height: view.frame.height/2)
+                    tabBarController?.navigationController?.present(vc, animated: false, completion: nil)
+                }
+                break
+            case 2:
+                //about us
+                //                    let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+                if let vc = storyboard?.instantiateViewController(withIdentifier: "aboutVC") {
+                    navigationController?.pushViewController(vc, animated: true)
+                }
+                break
+            case 3:
+                //contact us
+                //                    let storyboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+                if let vc = storyboard?.instantiateViewController(withIdentifier: "contactVC") as? ContactViewController{
+                    navigationController?.pushViewController(vc, animated: true)
+                }
+                break
+            case 4:
+                //logout
+                ShowAlert(title: "Logout", message: "Are you sure you want to logout?")
+                break
+            default:
+                break
+            }
         }
     }
 

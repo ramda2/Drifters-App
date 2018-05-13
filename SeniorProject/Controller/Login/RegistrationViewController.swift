@@ -10,9 +10,14 @@ import UIKit
 
 class RegistrationViewController: UIViewController, UITextFieldDelegate {
     
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+//    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var nextButton: UIButton!
+    
+    @IBOutlet weak var clearButton: UIButton!
     @IBOutlet weak var detailView: UIView!
+    @IBOutlet weak var contentView: UIView!
+    
+    @IBOutlet weak var scrollView: UIScrollView!
     //fields inside of detailView
     @IBOutlet weak var nameText: UITextField!
     @IBOutlet weak var licenseText: UITextField!
@@ -34,10 +39,11 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         nextButton.layer.cornerRadius = 10.0
+//        clearButton.layer.cornerRadius = 10.0
         createView.isHidden = true
         prepareEntryFields()
         hideKeyboardWhenTappedAround()
-        activityIndicator.isHidden = true
+//        activityIndicator.isHidden = true
     }
     
     @IBAction func next(_ sender: UIButton) {
@@ -58,50 +64,62 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         else {
             if (emailText.text == "" || usernameText.text == "" || passwordText.text == "") {
                 ShowAlert(title: "Oops", message: "Enter all fields to continue.")
+                return
             }
             else {
-                let name = nameText.text
-                let license = licenseText.text
-                let address = addressText.text
-                let city = cityText.text
-                let state = stateText.text
-                let zip = zipText.text
-                let phone = phoneText.text
-                let email = emailText.text
-                let username = usernameText.text
-                let password = passwordText.text
+                if !(validateEmail(enteredEmail: emailText.text!)){
+                    ShowAlert(title: "Oops", message: "Invalid email address format.\nTry Again.")
+                }
+                else {
+                    let name = nameText.text
+                    let license = licenseText.text
+                    let address = addressText.text
+                    let city = cityText.text
+                    let state = stateText.text
+                    let zip = zipText.text
+                    let phone = phoneText.text
+                    let email = emailText.text
+                    let username = usernameText.text
+                    let password = passwordText.text
                 
-                user = UserDetails(name: name!, license: license!, address: address!, city: city!, state: state!, zip: zip!, email: email!, phone: phone!, username: username!, password: password!)
-            
-                let postString = RestApiManager.sharedInstance.buildRegistrationPostString(model: user!)
-                let path = URLConstants.base.appending(URLConstants.registration)
-                RestApiManager.sharedInstance.PostHTTPRequest(path: path, args: postString) {
-                    (json, err) in
-                    print(json)
-                    self.valid = json["register"].boolValue
-                    if (self.valid){
-                        self.ShowAlert(title: json["message"].stringValue, message: json["response"].stringValue)
-                        clearAllFields()
-                    }
-                    else {
-                        self.ShowAlert(title: "Register", message: json["message"].stringValue)
+                    user = UserDetails(name: name!, license: license!, address: address!, city: city!, state: state!, zip: zip!, email: email!, phone: phone!, username: username!, password: password!)
+                
+                    let postString = RestApiManager.sharedInstance.buildRegistrationPostString(model: user!)
+                    let path = URLConstants.base.appending(URLConstants.registration)
+                    RestApiManager.sharedInstance.PostHTTPRequest(path: path, args: postString) {
+                        (json, err) in
+                        print(json)
+                        self.valid = json["register"].boolValue
+                        if (self.valid){
+                            self.ShowAlert(title: json["message"].stringValue, message: json["response"].stringValue)
+                            self.clearAllFields()
+                        }
+                        else {
+                            self.ShowAlert(title: "Register", message: json["message"].stringValue)
+                        }
                     }
                 }
             }
         }
         
-        func clearAllFields(){
-            nameText.text = ""
-            licenseText.text = ""
-            addressText.text = ""
-            cityText.text = ""
-            stateText.text = ""
-            zipText.text = ""
-            emailText.text = ""
-            phoneText.text = ""
-            usernameText.text = ""
-            passwordText.text = ""
-        }
+       
+    }
+    
+    @IBAction func clearFields(_ sender: UIButton) {
+        clearAllFields()
+    }
+    
+    func clearAllFields(){
+        nameText.text = ""
+        licenseText.text = ""
+        addressText.text = ""
+        cityText.text = ""
+        stateText.text = ""
+        zipText.text = ""
+        phoneText.text = ""
+        emailText.text = ""
+        usernameText.text = ""
+        passwordText.text = ""
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -115,12 +133,19 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(sender:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(sender:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
+    
+    func validateEmail(enteredEmail:String) -> Bool {
+        
+        let emailFormat = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let emailPredicate = NSPredicate(format:"SELF MATCHES %@", emailFormat)
+        return emailPredicate.evaluate(with: enteredEmail)
+    }
 }
 
 extension RegistrationViewController {
     //MARK: - Keyboard
     @objc func keyboardWillShow(sender: NSNotification) {
-        self.view.frame.origin.y = -95 // Move view points upward
+        self.view.frame.origin.y = -100 // Move view points upward
     }
     
     @objc func keyboardWillHide(sender: NSNotification) {
@@ -187,19 +212,20 @@ extension RegistrationViewController {
         self.present(alert, animated: true, completion: nil)
     }
     //MARK: Activity Indicator
-    private func startActivityIndicator(){
-        activityIndicator.center = self.view.center
-        activityIndicator.hidesWhenStopped = true
-        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
-        view.addSubview(activityIndicator)
-        activityIndicator.startAnimating()
-        UIApplication.shared.beginIgnoringInteractionEvents()
-    }
-    
-    private func stopActivityIndicator(){
-        activityIndicator.stopAnimating()
-        UIApplication.shared.endIgnoringInteractionEvents()
-    }
+//    private func startActivityIndicator(){
+//        activityIndicator.center = self.view.center
+//        activityIndicator.hidesWhenStopped = true
+//        activityIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.gray
+//        view.addSubview(activityIndicator)
+//        activityIndicator.startAnimating()
+//        UIApplication.shared.beginIgnoringInteractionEvents()
+//    }
+//
+//    private func stopActivityIndicator(){
+//        activityIndicator.stopAnimating()
+//        UIApplication.shared.endIgnoringInteractionEvents()
+//    }
 }
+
 
 

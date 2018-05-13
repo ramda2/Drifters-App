@@ -202,6 +202,19 @@ struct Helpers {
         }
     }
     
+    static func contact(name: String, email:String, phone:String?, comment:String, completion: @escaping (Bool) -> ()){
+        let path = URLConstants.base.appending(URLConstants.contact)
+        
+        let postString = "Name=\(name)&Email=\(email)&Phone=\(phone ?? "")&Comment=\(comment)"
+        RestApiManager.sharedInstance.PostHTTPRequest(path: path, args: postString) {
+            (json, err) in
+            //            print(json)
+            if let status:Bool = json["complete"].bool{
+                completion(status)
+            }
+        }
+    }
+    
     static func EmailInvoice(user: UserDetails, model: Cart, completion: @escaping (Bool) -> ()){
         if let session: String = KeychainWrapper.standard.string(forKey: "Session"){
             let path = URLConstants.base.appending(URLConstants.emailInvoice)

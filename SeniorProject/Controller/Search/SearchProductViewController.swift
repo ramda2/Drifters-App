@@ -123,8 +123,8 @@ class SearchProductViewController: UIViewController, UITableViewDataSource, UITa
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if ((tableView.cellForRow(at: indexPath) as? SearchedTableViewCell) != nil) {
-//            print("selected: \(indexPath.row)")
-            presentOptionFor(index: indexPath.row)
+            print("selected: \(indexPath.row)")
+//            presentOptionFor(index: indexPath.row)
         }
         else {
             if(filteredProducts.count == 0){

@@ -31,8 +31,14 @@ class StartViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
 //         Get the new view controller using segue.destinationViewController.
 //         Pass the selected object to the new view controller.
-        if segue.identifier == "bypassSegue" {
+        if segue.identifier == "guestSegue" {
 //            KeychainWrapper.standard.removeAllKeys()
+            KeychainWrapper.standard.set(true, forKey: "Guest")
+            print("Guest mode")
+        }
+        if segue.identifier == "checkSegue" {
+            KeychainWrapper.standard.set(false, forKey: "Guest")
+            print("User mode")
         }
     }
 

@@ -91,7 +91,7 @@ class CartTabViewController: UIViewController, UITableViewDataSource, UITableVie
             }
             else {
                 self.checkoutButton.isEnabled = true
-                self.checkoutButton.backgroundColor = UIColor.init(red: 218/255, green: 32/255, blue: 23/255, alpha: 1.0)
+                self.checkoutButton.backgroundColor = UIColor.init(red: 128/255, green: 0/255, blue: 0/255, alpha: 1.0)
             }
             self.tableView.reloadData()
 //            self.activityIndicator.stopAnimating()

@@ -23,7 +23,6 @@
 		FD179BB5208A8C610082FFC3 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD179BB4208A8C610082FFC3 /* Cart.swift */; };
 		FD179BB8208AC4A80082FFC3 /* DefaultPicksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD179BB7208AC4A80082FFC3 /* DefaultPicksTableViewCell.swift */; };
 		FD179BBA208AC5190082FFC3 /* SearchedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD179BB9208AC5190082FFC3 /* SearchedTableViewCell.swift */; };
-		FD179BBC208AC57A0082FFC3 /* SearchProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD179BBB208AC57A0082FFC3 /* SearchProductViewController.swift */; };
 		FD179BBE208E8B760082FFC3 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD179BBD208E8B760082FFC3 /* AccountViewController.swift */; };
 		FD179BC0208E8C4C0082FFC3 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD179BBF208E8C4C0082FFC3 /* AccountTableViewCell.swift */; };
 		FD5379E22044C8D6002066BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5379E12044C8D6002066BC /* AppDelegate.swift */; };
@@ -51,6 +50,13 @@
 		FD96C92B2060B60B000BF16D /* RestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD96C92A2060B60B000BF16D /* RestAPI.swift */; };
 		FDA6E6F6206729A4002BDE6B /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA6E6F5206729A4002BDE6B /* StartViewController.swift */; };
 		FDC1FBC9206172A10029C417 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC1FBC8206172A10029C417 /* Product.swift */; };
+		FDF17C1820A76F8100E56C25 /* RegistrationTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF17C1720A76F8100E56C25 /* RegistrationTestViewController.swift */; };
+		FDF17C2520A77A6E00E56C25 /* RegisterDetail1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF17C2320A77A6E00E56C25 /* RegisterDetail1ViewController.swift */; };
+		FDF17C2620A77A6E00E56C25 /* RegisterDetail1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF17C2420A77A6E00E56C25 /* RegisterDetail1ViewController.xib */; };
+		FDF17C2920A77A8600E56C25 /* RegisterDetail2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF17C2720A77A8600E56C25 /* RegisterDetail2ViewController.swift */; };
+		FDF17C2A20A77A8600E56C25 /* RegisterDetail2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF17C2820A77A8600E56C25 /* RegisterDetail2ViewController.xib */; };
+		FDF17C2C20A89AAD00E56C25 /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF17C2B20A89AAD00E56C25 /* FilterTableViewCell.swift */; };
+		FDF17C2E20A8A4CC00E56C25 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF17C2D20A8A4CC00E56C25 /* SearchViewController.swift */; };
 		FDF27CE92096B27A0096110E /* UpdatePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF27CE82096B27A0096110E /* UpdatePopUpViewController.swift */; };
 		FDF27CEB2096E79F0096110E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF27CEA2096E79F0096110E /* Constants.swift */; };
 /* End PBXBuildFile section */
@@ -75,7 +81,6 @@
 		FD179BB4208A8C610082FFC3 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
 		FD179BB7208AC4A80082FFC3 /* DefaultPicksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultPicksTableViewCell.swift; sourceTree = "<group>"; };
 		FD179BB9208AC5190082FFC3 /* SearchedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchedTableViewCell.swift; sourceTree = "<group>"; };
-		FD179BBB208AC57A0082FFC3 /* SearchProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchProductViewController.swift; sourceTree = "<group>"; };
 		FD179BBD208E8B760082FFC3 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		FD179BBF208E8C4C0082FFC3 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
 		FD5379DE2044C8D6002066BC /* SeniorProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeniorProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -105,6 +110,13 @@
 		FD96C92A2060B60B000BF16D /* RestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestAPI.swift; sourceTree = "<group>"; };
 		FDA6E6F5206729A4002BDE6B /* StartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		FDC1FBC8206172A10029C417 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		FDF17C1720A76F8100E56C25 /* RegistrationTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationTestViewController.swift; sourceTree = "<group>"; };
+		FDF17C2320A77A6E00E56C25 /* RegisterDetail1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDetail1ViewController.swift; sourceTree = "<group>"; };
+		FDF17C2420A77A6E00E56C25 /* RegisterDetail1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterDetail1ViewController.xib; sourceTree = "<group>"; };
+		FDF17C2720A77A8600E56C25 /* RegisterDetail2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterDetail2ViewController.swift; sourceTree = "<group>"; };
+		FDF17C2820A77A8600E56C25 /* RegisterDetail2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterDetail2ViewController.xib; sourceTree = "<group>"; };
+		FDF17C2B20A89AAD00E56C25 /* FilterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
+		FDF17C2D20A8A4CC00E56C25 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		FDF27CE82096B27A0096110E /* UpdatePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePopUpViewController.swift; sourceTree = "<group>"; };
 		FDF27CEA2096E79F0096110E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -160,7 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				FDF17C1520A738D800E56C25 /* Table Data */,
-				FD179BBB208AC57A0082FFC3 /* SearchProductViewController.swift */,
+				FDF17C2D20A8A4CC00E56C25 /* SearchViewController.swift */,
 			);
 			path = Search;
 			sourceTree = "<group>";
@@ -243,6 +255,10 @@
 			children = (
 				FD5379E52044C8D6002066BC /* Main.storyboard */,
 				FD5379EA2044C8D6002066BC /* LaunchScreen.storyboard */,
+				FDF17C2320A77A6E00E56C25 /* RegisterDetail1ViewController.swift */,
+				FDF17C2420A77A6E00E56C25 /* RegisterDetail1ViewController.xib */,
+				FDF17C2720A77A8600E56C25 /* RegisterDetail2ViewController.swift */,
+				FDF17C2820A77A8600E56C25 /* RegisterDetail2ViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -250,12 +266,14 @@
 		FD5379FD2048E6A9002066BC /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				FDF17C1720A76F8100E56C25 /* RegistrationTestViewController.swift */,
+				FD938E592065BFCF00B25C6B /* TabBarViewController.swift */,
 				FDFE8B8B20858921008B4E01 /* Start */,
-				FD179BC3208FBB630082FFC3 /* Account */,
-				FD179BC2208FBAC20082FFC3 /* Cart */,
-				FD179BC1208FBAAE0082FFC3 /* Shop */,
-				FD179BB6208AA14C0082FFC3 /* Search */,
 				FD5421D720643CD8000CCF49 /* Login */,
+				FD179BB6208AA14C0082FFC3 /* Search */,
+				FD179BC1208FBAAE0082FFC3 /* Shop */,
+				FD179BC2208FBAC20082FFC3 /* Cart */,
+				FD179BC3208FBB630082FFC3 /* Account */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -299,6 +317,7 @@
 				FD9401B920675A9D009972C0 /* ShopHeaderCollectionReusableView.swift */,
 				FD9401C420687E59009972C0 /* FilterCollectionViewCell.swift */,
 				FD9401B7206756E0009972C0 /* ShopCollectionViewCell.swift */,
+				FDF17C2B20A89AAD00E56C25 /* FilterTableViewCell.swift */,
 			);
 			path = "Table Data";
 			sourceTree = "<group>";
@@ -326,7 +345,6 @@
 			children = (
 				FDA6E6F5206729A4002BDE6B /* StartViewController.swift */,
 				FD5379F32044CBAD002066BC /* LoginViewController.swift */,
-				FD938E592065BFCF00B25C6B /* TabBarViewController.swift */,
 			);
 			path = Start;
 			sourceTree = "<group>";
@@ -393,9 +411,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDF17C2620A77A6E00E56C25 /* RegisterDetail1ViewController.xib in Resources */,
 				FD5379EC2044C8D6002066BC /* LaunchScreen.storyboard in Resources */,
 				FD5379E92044C8D6002066BC /* Assets.xcassets in Resources */,
 				FD5379E72044C8D6002066BC /* Main.storyboard in Resources */,
+				FDF17C2A20A77A8600E56C25 /* RegisterDetail2ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,7 +467,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD179BBC208AC57A0082FFC3 /* SearchProductViewController.swift in Sources */,
 				FD179BB8208AC4A80082FFC3 /* DefaultPicksTableViewCell.swift in Sources */,
 				FD761FD720632041007B0DF7 /* CustomSegmentControl.swift in Sources */,
 				FD82D26F209FC697005D69C5 /* ContactViewController.swift in Sources */,
@@ -458,19 +477,24 @@
 				FD9401C520687E59009972C0 /* FilterCollectionViewCell.swift in Sources */,
 				FD179BBE208E8B760082FFC3 /* AccountViewController.swift in Sources */,
 				FD179BB12089960B0082FFC3 /* KeychainWrapper.swift in Sources */,
+				FDF17C2920A77A8600E56C25 /* RegisterDetail2ViewController.swift in Sources */,
 				FD5379F620472463002066BC /* RegistrationViewController.swift in Sources */,
 				FD6E9315207B2C01006E2E44 /* CartTabViewController.swift in Sources */,
 				FD761FD12062E375007B0DF7 /* DefaultTableViewCell.swift in Sources */,
 				FD9401BE206810EB009972C0 /* ShopViewController.swift in Sources */,
+				FDF17C1820A76F8100E56C25 /* RegistrationTestViewController.swift in Sources */,
 				FD179BB5208A8C610082FFC3 /* Cart.swift in Sources */,
 				FD6E9310207B0887006E2E44 /* TODO.swift in Sources */,
+				FDF17C2C20A89AAD00E56C25 /* FilterTableViewCell.swift in Sources */,
 				FD5379F42044CBAD002066BC /* LoginViewController.swift in Sources */,
 				FD761FD520631E21007B0DF7 /* SegmentedViewController.swift in Sources */,
+				FDF17C2E20A8A4CC00E56C25 /* SearchViewController.swift in Sources */,
 				FD9401BA20675A9D009972C0 /* ShopHeaderCollectionReusableView.swift in Sources */,
 				FD06393F207AD2AC002F11E8 /* ProductPopUpViewController.swift in Sources */,
 				FDC1FBC9206172A10029C417 /* Product.swift in Sources */,
 				FD5379E22044C8D6002066BC /* AppDelegate.swift in Sources */,
 				FD6E9313207B2B75006E2E44 /* CartTableViewCell.swift in Sources */,
+				FDF17C2520A77A6E00E56C25 /* RegisterDetail1ViewController.swift in Sources */,
 				FDF27CEB2096E79F0096110E /* Constants.swift in Sources */,
 				FD5379F8204847ED002066BC /* User.swift in Sources */,
 				FD9401C720688728009972C0 /* FilterViewController.swift in Sources */,

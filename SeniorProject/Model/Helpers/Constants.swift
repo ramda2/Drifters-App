@@ -21,5 +21,5 @@ struct URLConstants{
     static let placeOrder = "Post_Order.php"
     static let emailInvoice = "Post_EmailInvoice.php"
     static let user_details = "Post_UserDetails.php"
-    
+    static let contact = "Post_Contact.php"
 }

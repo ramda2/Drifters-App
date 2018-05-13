@@ -1,21 +1,27 @@
 //
-//  TabBarViewController.swift
+//  registerDetail1ViewController.swift
 //  SeniorProject
 //
-//  Created by Angie on 3/23/18.
+//  Created by Angie on 5/12/18.
 //  Copyright © 2018 DrifterDistribution. All rights reserved.
 //
 
 import UIKit
 
-class TabBarViewController: UITabBarController {
+class RegisterDetail1ViewController: UIViewController {
+    @IBOutlet weak var nameTextField: UITextField!
     
-//    var user:User?
-
+    @IBOutlet weak var addressTextField: UITextField!
+    @IBOutlet weak var licenseTextField: UITextField!
+    @IBOutlet weak var phoneTextField: UITextField!
+    @IBOutlet weak var zipTextField: UITextField!
+    @IBOutlet weak var stateTextField: UITextField!
+    @IBOutlet weak var cityTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
-        self.selectedIndex = 1
     }
 
     override func didReceiveMemoryWarning() {
@@ -23,11 +29,6 @@ class TabBarViewController: UITabBarController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-        // Show the Navigation Bar
-        self.navigationController?.setNavigationBarHidden(true, animated: false)
-    }
 
     /*
     // MARK: - Navigation
