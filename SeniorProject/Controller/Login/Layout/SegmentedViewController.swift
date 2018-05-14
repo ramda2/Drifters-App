@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SegmentedViewController: UIViewController {
+class SegmentedViewController: UIViewController, UIGestureRecognizerDelegate {
     @IBOutlet weak var contentView: UIView!
     @IBOutlet weak var segmentedControl: CustomSegmentControl!
     
@@ -31,7 +31,14 @@ class SegmentedViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = false
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
     }
+    
+    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

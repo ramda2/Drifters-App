@@ -398,13 +398,18 @@ extension SearchViewController: AVCaptureMetadataOutputObjectsDelegate {
         
         if let metadataObject = metadataObjects.first {
             guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject else { return }
-            guard let stringValue = readableObject.stringValue else { return }
+            guard var stringValue = readableObject.stringValue else { return }
             AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
+//            if stringValue.hasPrefix("00"){
+//                let range = stringValue.startIndex..<stringValue.index(stringValue.startIndex, offsetBy: 2)
+//                stringValue.removeSubrange(range)
+//            }
+//            16619756801
             found(code: stringValue)
             scannerActive = true
             searchActive=false
             picksActive = false
-            //test barcode - 8902967200115
+            //test barcode - 16619756801
             searchBar(searchBar, textDidChange: stringValue)
         }
         previewLayer?.removeFromSuperlayer()

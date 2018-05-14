@@ -13,10 +13,8 @@ class RegistrationTestViewController: UIViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var scrollView: UIScrollView!
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
         let v1:RegisterDetail1ViewController = RegisterDetail1ViewController(nibName: "RegisterDetail1ViewController", bundle: nil)
         let v2:RegisterDetail2ViewController = RegisterDetail2ViewController(nibName: "RegisterDetail2ViewController", bundle: nil)
@@ -33,18 +31,12 @@ class RegistrationTestViewController: UIViewController {
         v2.view.frame = V2Frame
         
         self.scrollView.contentSize = CGSize.init(width: self.view.frame.width * 2, height: view.frame.height-80)
-        
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-    
 
     /*
     // MARK: - Navigation

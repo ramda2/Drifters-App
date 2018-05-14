@@ -50,7 +50,8 @@ class UpdatePopUpViewController: UIViewController, UIGestureRecognizerDelegate {
 
     @IBAction func updateQuantity(_ sender: UIButton) {
         if let product = selectedProduct {
-            product.quantity = Int(productQuantity.text!)!
+            productQuantity.text = product.quantity.description
+//            product.quantity = Int(productQuantity.text!)!
             Helpers.checkQuantity(model: product, completion: { (status, message) in
                 if (!status){
                     if let msg = message {

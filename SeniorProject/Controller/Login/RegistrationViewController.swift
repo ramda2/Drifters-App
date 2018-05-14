@@ -145,11 +145,11 @@ class RegistrationViewController: UIViewController, UITextFieldDelegate {
 extension RegistrationViewController {
     //MARK: - Keyboard
     @objc func keyboardWillShow(sender: NSNotification) {
-        self.view.frame.origin.y = -100 // Move view points upward
+        self.scrollView.contentOffset.y = -100 // Move view points upward
     }
     
     @objc func keyboardWillHide(sender: NSNotification) {
-        self.view.frame.origin.y = 0 // Move view to original position
+        self.scrollView.contentOffset.y = 0 // Move view to original position
     }
     
     func hideKeyboardWhenTappedAround() {
