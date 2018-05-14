@@ -18,6 +18,7 @@
 		FD09389620956E4D006CF747 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD09389520956E4D006CF747 /* MobileCoreServices.framework */; };
 		FD09389820956E54006CF747 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD09389720956E54006CF747 /* SystemConfiguration.framework */; };
 		FD09389A20956E5B006CF747 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD09389920956E5B006CF747 /* SafariServices.framework */; };
+		FD10E69B20A985CC0006F257 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD10E69A20A985CB0006F257 /* Assets.xcassets */; };
 		FD179BB12089960B0082FFC3 /* KeychainWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD179BB02089960B0082FFC3 /* KeychainWrapper.swift */; };
 		FD179BB3208996140082FFC3 /* KeychainItemAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD179BB2208996130082FFC3 /* KeychainItemAccessibility.swift */; };
 		FD179BB5208A8C610082FFC3 /* Cart.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD179BB4208A8C610082FFC3 /* Cart.swift */; };
@@ -27,10 +28,8 @@
 		FD179BC0208E8C4C0082FFC3 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD179BBF208E8C4C0082FFC3 /* AccountTableViewCell.swift */; };
 		FD5379E22044C8D6002066BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5379E12044C8D6002066BC /* AppDelegate.swift */; };
 		FD5379E72044C8D6002066BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD5379E52044C8D6002066BC /* Main.storyboard */; };
-		FD5379E92044C8D6002066BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD5379E82044C8D6002066BC /* Assets.xcassets */; };
 		FD5379EC2044C8D6002066BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD5379EA2044C8D6002066BC /* LaunchScreen.storyboard */; };
 		FD5379F42044CBAD002066BC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5379F32044CBAD002066BC /* LoginViewController.swift */; };
-		FD5379F620472463002066BC /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5379F520472463002066BC /* RegistrationViewController.swift */; };
 		FD5379F8204847ED002066BC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5379F7204847ED002066BC /* User.swift */; };
 		FD6E9310207B0887006E2E44 /* TODO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6E930F207B0887006E2E44 /* TODO.swift */; };
 		FD6E9313207B2B75006E2E44 /* CartTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6E9312207B2B75006E2E44 /* CartTableViewCell.swift */; };
@@ -50,9 +49,6 @@
 		FDC1FBC9206172A10029C417 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC1FBC8206172A10029C417 /* Product.swift */; };
 		FDF17C2C20A89AAD00E56C25 /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF17C2B20A89AAD00E56C25 /* FilterTableViewCell.swift */; };
 		FDF17C2E20A8A4CC00E56C25 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF17C2D20A8A4CC00E56C25 /* SearchViewController.swift */; };
-		FDF17C3220A8DC0500E56C25 /* RegistrationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF17C3120A8DC0500E56C25 /* RegistrationPageViewController.swift */; };
-		FDF17C3520A8E0CA00E56C25 /* Detail1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF17C3420A8E0CA00E56C25 /* Detail1ViewController.swift */; };
-		FDF17C3720A8E0D700E56C25 /* Detail2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF17C3620A8E0D700E56C25 /* Detail2ViewController.swift */; };
 		FDF17C3B20A92F5100E56C25 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF17C3A20A92F5100E56C25 /* RegisterViewController.swift */; };
 		FDF17C3D20A969FD00E56C25 /* DisplayDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF17C3C20A969FD00E56C25 /* DisplayDetailViewController.swift */; };
 		FDF27CE92096B27A0096110E /* UpdatePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF27CE82096B27A0096110E /* UpdatePopUpViewController.swift */; };
@@ -74,6 +70,7 @@
 		FD09389720956E54006CF747 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		FD09389920956E5B006CF747 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
 		FD0938A6209574C5006CF747 /* SeniorProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SeniorProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		FD10E69A20A985CB0006F257 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD179BB02089960B0082FFC3 /* KeychainWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainWrapper.swift; sourceTree = "<group>"; };
 		FD179BB2208996130082FFC3 /* KeychainItemAccessibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeychainItemAccessibility.swift; sourceTree = "<group>"; };
 		FD179BB4208A8C610082FFC3 /* Cart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cart.swift; sourceTree = "<group>"; };
@@ -84,10 +81,8 @@
 		FD5379DE2044C8D6002066BC /* SeniorProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeniorProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD5379E12044C8D6002066BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD5379E62044C8D6002066BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FD5379E82044C8D6002066BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD5379EB2044C8D6002066BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD5379F32044CBAD002066BC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		FD5379F520472463002066BC /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		FD5379F7204847ED002066BC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FD537A042048F249002066BC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SeniorProject/Info.plist; sourceTree = SOURCE_ROOT; };
 		FD6E930F207B0887006E2E44 /* TODO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TODO.swift; sourceTree = "<group>"; };
@@ -108,9 +103,6 @@
 		FDC1FBC8206172A10029C417 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		FDF17C2B20A89AAD00E56C25 /* FilterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
 		FDF17C2D20A8A4CC00E56C25 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
-		FDF17C3120A8DC0500E56C25 /* RegistrationPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPageViewController.swift; sourceTree = "<group>"; };
-		FDF17C3420A8E0CA00E56C25 /* Detail1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail1ViewController.swift; sourceTree = "<group>"; };
-		FDF17C3620A8E0D700E56C25 /* Detail2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail2ViewController.swift; sourceTree = "<group>"; };
 		FDF17C3A20A92F5100E56C25 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		FDF17C3C20A969FD00E56C25 /* DisplayDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayDetailViewController.swift; sourceTree = "<group>"; };
 		FDF27CE82096B27A0096110E /* UpdatePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePopUpViewController.swift; sourceTree = "<group>"; };
@@ -225,12 +217,12 @@
 		FD5379E02044C8D6002066BC /* SeniorProject */ = {
 			isa = PBXGroup;
 			children = (
+				FD10E69A20A985CB0006F257 /* Assets.xcassets */,
 				FD6E930F207B0887006E2E44 /* TODO.swift */,
 				FD537A042048F249002066BC /* Info.plist */,
 				FD5379FB2048E69A002066BC /* Model */,
 				FD5379FC2048E6A3002066BC /* View */,
 				FD5379FD2048E6A9002066BC /* Controller */,
-				FD5379E82044C8D6002066BC /* Assets.xcassets */,
 				FD0938A6209574C5006CF747 /* SeniorProject-Bridging-Header.h */,
 			);
 			path = SeniorProject;
@@ -250,8 +242,6 @@
 			isa = PBXGroup;
 			children = (
 				FD5379E52044C8D6002066BC /* Main.storyboard */,
-				FDF17C3A20A92F5100E56C25 /* RegisterViewController.swift */,
-				FDF17C3C20A969FD00E56C25 /* DisplayDetailViewController.swift */,
 				FD5379EA2044C8D6002066BC /* LaunchScreen.storyboard */,
 			);
 			path = View;
@@ -261,7 +251,6 @@
 			isa = PBXGroup;
 			children = (
 				FD938E592065BFCF00B25C6B /* TabBarViewController.swift */,
-				FDF17C3320A8E0A500E56C25 /* test */,
 				FDFE8B8B20858921008B4E01 /* Start */,
 				FD5421D720643CD8000CCF49 /* Login */,
 				FD179BB6208AA14C0082FFC3 /* Search */,
@@ -277,7 +266,9 @@
 			children = (
 				FDF17C1620A738E800E56C25 /* Layout */,
 				FD761FDA2063348D007B0DF7 /* PasswordPopUpViewController.swift */,
-				FD5379F520472463002066BC /* RegistrationViewController.swift */,
+				FDF17C3C20A969FD00E56C25 /* DisplayDetailViewController.swift */,
+				FDF17C3A20A92F5100E56C25 /* RegisterViewController.swift */,
+				FD5379F32044CBAD002066BC /* LoginViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -332,21 +323,10 @@
 			path = Layout;
 			sourceTree = "<group>";
 		};
-		FDF17C3320A8E0A500E56C25 /* test */ = {
-			isa = PBXGroup;
-			children = (
-				FDF17C3120A8DC0500E56C25 /* RegistrationPageViewController.swift */,
-				FDF17C3420A8E0CA00E56C25 /* Detail1ViewController.swift */,
-				FDF17C3620A8E0D700E56C25 /* Detail2ViewController.swift */,
-			);
-			path = test;
-			sourceTree = "<group>";
-		};
 		FDFE8B8B20858921008B4E01 /* Start */ = {
 			isa = PBXGroup;
 			children = (
 				FDA6E6F5206729A4002BDE6B /* StartViewController.swift */,
-				FD5379F32044CBAD002066BC /* LoginViewController.swift */,
 			);
 			path = Start;
 			sourceTree = "<group>";
@@ -414,7 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD5379EC2044C8D6002066BC /* LaunchScreen.storyboard in Resources */,
-				FD5379E92044C8D6002066BC /* Assets.xcassets in Resources */,
+				FD10E69B20A985CC0006F257 /* Assets.xcassets in Resources */,
 				FD5379E72044C8D6002066BC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,7 +449,6 @@
 			files = (
 				FD179BB8208AC4A80082FFC3 /* DefaultPicksTableViewCell.swift in Sources */,
 				FD761FD720632041007B0DF7 /* CustomSegmentControl.swift in Sources */,
-				FDF17C3220A8DC0500E56C25 /* RegistrationPageViewController.swift in Sources */,
 				FD82D26F209FC697005D69C5 /* ContactViewController.swift in Sources */,
 				FDA6E6F6206729A4002BDE6B /* StartViewController.swift in Sources */,
 				FD179BBA208AC5190082FFC3 /* SearchedTableViewCell.swift in Sources */,
@@ -477,9 +456,6 @@
 				FD9401B8206756E0009972C0 /* ShopCollectionViewCell.swift in Sources */,
 				FD179BBE208E8B760082FFC3 /* AccountViewController.swift in Sources */,
 				FD179BB12089960B0082FFC3 /* KeychainWrapper.swift in Sources */,
-				FD5379F620472463002066BC /* RegistrationViewController.swift in Sources */,
-				FDF17C3720A8E0D700E56C25 /* Detail2ViewController.swift in Sources */,
-				FDF17C3520A8E0CA00E56C25 /* Detail1ViewController.swift in Sources */,
 				FD6E9315207B2C01006E2E44 /* CartTabViewController.swift in Sources */,
 				FD9401BE206810EB009972C0 /* ShopViewController.swift in Sources */,
 				FD179BB5208A8C610082FFC3 /* Cart.swift in Sources */,

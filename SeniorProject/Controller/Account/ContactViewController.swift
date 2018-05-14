@@ -15,6 +15,8 @@ class ContactViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     @IBOutlet weak var numberTextField: UITextField!
     @IBOutlet weak var commentTextField: UITextView!
     
+    @IBOutlet weak var clearButton: UIButton!
+    @IBOutlet weak var sendEmailButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -23,6 +25,9 @@ class ContactViewController: UIViewController, UITextFieldDelegate, UITextViewDe
         emailTextField.delegate = self
         numberTextField.delegate = self
         commentTextField.delegate = self
+        sendEmailButton.layer.cornerRadius = 10.0
+        clearButton.layer.cornerRadius = 10.0
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -55,7 +60,7 @@ class ContactViewController: UIViewController, UITextFieldDelegate, UITextViewDe
                     if let comment = commentTextField.text{
                         Helpers.contact(name: name, email: email, phone: numberTextField.text ?? "", comment: comment, completion: { (complete) in
                                 if (complete){
-                                    self.ShowAlert(title: "Contact Us", message: "Thank you for your feedback! Your email has been delivered.")
+                                    self.ShowAlert(title: "Email sent", message: "Thank you for your feedback/inquiry!")
                                 }
                             })
                     }
@@ -87,10 +92,22 @@ class ContactViewController: UIViewController, UITextFieldDelegate, UITextViewDe
     */
     
    
+    //MARK: - Textfield protocol
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide(sender:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
         textField.resignFirstResponder()
         return true
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        textField.resignFirstResponder()
+    }
+    func textViewDidBeginEditing(_ textView: UITextView) {
+         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow(sender:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        textView.resignFirstResponder()
     }
 
 }

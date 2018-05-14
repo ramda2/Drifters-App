@@ -155,7 +155,6 @@ extension ProductPopUpViewController {
     func textFieldDidBeginEditing(_ textField: UITextField) {
         //delegate method
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow(sender:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
