@@ -8,7 +8,7 @@
 
 import UIKit
 
-class UpdatePopUpViewController: UIViewController, UIGestureRecognizerDelegate {
+class UpdatePopUpViewController: UIViewController, UIGestureRecognizerDelegate, UITextFieldDelegate {
     
     var delegate: UpdateTableDelegate?
     
@@ -30,12 +30,15 @@ class UpdatePopUpViewController: UIViewController, UIGestureRecognizerDelegate {
         productPopUpView.layer.masksToBounds = true
         deleteProduct.layer.cornerRadius = 10
         updateProduct.layer.cornerRadius = 10
+        productQuantity.delegate = self
+        hideKeyboardWhenTappedAround()
         if let product = selectedProduct {
             productName.text = product.name
             productPrice.text = "$ ".appending(product.price.description)
             let url = product.img.replacingOccurrences(of: " ", with: "%20")
             let path = URLConstants.base.appending(url)
             productImg.sd_setImage(with: URL(string: path), completed: nil)
+            productQuantity.text = product.quantity.description
         }
     }
     
@@ -50,8 +53,8 @@ class UpdatePopUpViewController: UIViewController, UIGestureRecognizerDelegate {
 
     @IBAction func updateQuantity(_ sender: UIButton) {
         if let product = selectedProduct {
-            productQuantity.text = product.quantity.description
-//            product.quantity = Int(productQuantity.text!)!
+            product.quantity = Int(productQuantity.text!)!
+            print(product.quantity)
             Helpers.checkQuantity(model: product, completion: { (status, message) in
                 if (!status){
                     if let msg = message {
@@ -82,11 +85,6 @@ class UpdatePopUpViewController: UIViewController, UIGestureRecognizerDelegate {
                 self.dismiss(animated: false, completion: nil)
             })
         }
-    }
-    
-    @IBAction func valueChanged(_ sender: UIStepper) {
-        selectedProduct?.quantity = Int(sender.value)
-        productQuantity.text = selectedProduct?.quantity.description
     }
     
     @objc func settingsBGTapped(sender: UITapGestureRecognizer){
@@ -128,6 +126,7 @@ class UpdatePopUpViewController: UIViewController, UIGestureRecognizerDelegate {
         self.present(alert, animated: true, completion: nil)
     }
 
+    
     /*
     // MARK: - Navigation
 
@@ -138,4 +137,45 @@ class UpdatePopUpViewController: UIViewController, UIGestureRecognizerDelegate {
     }
     */
 
+}
+
+extension UpdatePopUpViewController {
+    //MARK: - Textfield protocol
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        //delegate method
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow(sender:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        textField.resignFirstResponder()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide(sender:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        textField.resignFirstResponder()
+        return true
+    }
+}
+
+extension UpdatePopUpViewController {
+    //MARK: - Keyboard
+    @objc func keyboardWillShow(sender: NSNotification) {
+        self.view.frame.origin.y = -60 // Move view points upward
+    }
+    
+    @objc func keyboardWillHide(sender: NSNotification) {
+        self.view.frame.origin.y  = 0 // Move view to original position
+    }
+    
+    func hideKeyboardWhenTappedAround() {
+        let tapGesture = UITapGestureRecognizer(target: self,
+                                                action: #selector(hideKeyboard))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func hideKeyboard() {
+        self.view.frame.origin.y  = 0
+        view.endEditing(true)
+    }
 }

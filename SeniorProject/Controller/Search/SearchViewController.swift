@@ -400,11 +400,11 @@ extension SearchViewController: AVCaptureMetadataOutputObjectsDelegate {
             guard let readableObject = metadataObject as? AVMetadataMachineReadableCodeObject else { return }
             guard var stringValue = readableObject.stringValue else { return }
             AudioServicesPlaySystemSound(SystemSoundID(kSystemSoundID_Vibrate))
-//            if stringValue.hasPrefix("00"){
-//                let range = stringValue.startIndex..<stringValue.index(stringValue.startIndex, offsetBy: 2)
-//                stringValue.removeSubrange(range)
-//            }
-//            16619756801
+            //for purposes of testing and rushed implementation in database changes, scanner will resort to this method
+            if stringValue.hasPrefix("00"){
+                let range = stringValue.startIndex..<stringValue.index(stringValue.startIndex, offsetBy: 6)
+                stringValue.removeSubrange(range)
+            }
             found(code: stringValue)
             scannerActive = true
             searchActive=false

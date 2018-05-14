@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProductPopUpViewController: UIViewController, UIGestureRecognizerDelegate {
+class ProductPopUpViewController: UIViewController, UIGestureRecognizerDelegate, UITextFieldDelegate {
 
     private var tapBGGesture: UITapGestureRecognizer!
     public var selectedProduct: Product?
@@ -26,6 +26,8 @@ class ProductPopUpViewController: UIViewController, UIGestureRecognizerDelegate 
         productPopUpView.layer.cornerRadius = 10
         productPopUpView.layer.masksToBounds = true
         addButton.layer.cornerRadius = 10
+        productQuantity.delegate = self
+        hideKeyboardWhenTappedAround()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -54,7 +56,7 @@ class ProductPopUpViewController: UIViewController, UIGestureRecognizerDelegate 
     
     @IBAction func addToCart(_ sender: UIButton) {
         if KeychainWrapper.standard.bool(forKey: "Guest")!{
-            ShowLogInAlert(title: "Alert", message: "Please sign in or register to continue.")
+            ShowLogInAlert(title: "Guest user", message: "Please sign in or register to purchase products.")
         }
         else {
                 if let product = selectedProduct {
@@ -148,4 +150,45 @@ class ProductPopUpViewController: UIViewController, UIGestureRecognizerDelegate 
     */
 
 }
+extension ProductPopUpViewController {
+    //MARK: - Textfield protocol
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        //delegate method
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow(sender:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        textField.resignFirstResponder()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHide(sender:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
+        textField.resignFirstResponder()
+        return true
+    }
+}
+
+extension ProductPopUpViewController {
+    //MARK: - Keyboard
+    @objc func keyboardWillShow(sender: NSNotification) {
+        self.view.frame.origin.y = -60 // Move view points upward
+    }
+    
+    @objc func keyboardWillHide(sender: NSNotification) {
+        self.view.frame.origin.y  = 0 // Move view to original position
+    }
+    
+    func hideKeyboardWhenTappedAround() {
+        let tapGesture = UITapGestureRecognizer(target: self,
+                                                action: #selector(hideKeyboard))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc func hideKeyboard() {
+        self.view.frame.origin.y  = 0
+        view.endEditing(true)
+    }
+}
+
 

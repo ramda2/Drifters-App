@@ -822,7 +822,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SeniorProject/Controller/Login/RegistrationViewController.swift"
-            timestampString = "547966945.182833"
+            timestampString = "547973087.014064"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "87"
@@ -838,7 +838,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SeniorProject/Controller/Login/RegistrationViewController.swift"
-            timestampString = "547966945.182968"
+            timestampString = "547973087.014207"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "88"
@@ -854,7 +854,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SeniorProject/Controller/Login/RegistrationViewController.swift"
-            timestampString = "547966945.183063"
+            timestampString = "547973087.014342"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "92"
@@ -870,7 +870,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SeniorProject/Controller/Login/RegistrationViewController.swift"
-            timestampString = "547966945.183184"
+            timestampString = "547973087.014468"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "91"
@@ -1414,11 +1414,59 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SeniorProject/Controller/Shop/ProductPopUpViewController.swift"
-            timestampString = "547966945.183789"
+            timestampString = "547973087.015317"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
+            startingLineNumber = "117"
+            endingLineNumber = "117"
+            landmarkName = "ShowAlert(title:message:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SeniorProject.ProductPopUpViewController.(ShowAlert in _E704CC9AA9C816EBF7FE79A080E0E129)(title: Swift.String, message: Swift.String) -&gt; ()"
+                  moduleName = "SeniorProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ANGIE/Desktop/SeniorProject/SeniorProject/Controller/Shop/ProductPopUpViewController.swift"
+                  timestampString = "547971956.248026"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "117"
+                  endingLineNumber = "117"
+                  offsetFromSymbolStart = "236">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (__ObjC.UIAlertAction) -&gt; () in SeniorProject.ProductPopUpViewController.(ShowAlert in _E704CC9AA9C816EBF7FE79A080E0E129)(title: Swift.String, message: Swift.String) -&gt; ()"
+                  moduleName = "SeniorProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/ANGIE/Desktop/SeniorProject/SeniorProject/Controller/Shop/ProductPopUpViewController.swift"
+                  timestampString = "547971956.249862"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "118"
+                  endingLineNumber = "118"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SeniorProject/Controller/Shop/ProductPopUpViewController.swift"
+            timestampString = "547973087.0158761"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
             landmarkName = "ShowAlert(title:message:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1430,27 +1478,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SeniorProject/Controller/Shop/ProductPopUpViewController.swift"
-            timestampString = "547966945.183897"
+            timestampString = "547973087.0164"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "118"
-            endingLineNumber = "118"
-            landmarkName = "ShowAlert(title:message:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SeniorProject/Controller/Shop/ProductPopUpViewController.swift"
-            timestampString = "547966945.184002"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
+            startingLineNumber = "123"
+            endingLineNumber = "123"
             landmarkName = "ShowAlert(title:message:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1462,11 +1494,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SeniorProject/Controller/Shop/ProductPopUpViewController.swift"
-            timestampString = "547966945.184108"
+            timestampString = "547973087.016875"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "settingsBGTapped(sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1478,39 +1510,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SeniorProject/Controller/Shop/ProductPopUpViewController.swift"
-            timestampString = "547966945.184184"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
-            landmarkName = "settingsBGTapped(sender:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SeniorProject/Controller/Shop/ProductPopUpViewController.swift"
-            timestampString = "547966945.184285"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
-            landmarkName = "settingsBGTapped(sender:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SeniorProject/Controller/Shop/ProductPopUpViewController.swift"
-            timestampString = "547966945.184397"
+            timestampString = "547973087.017357"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "92"
@@ -1526,11 +1526,43 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SeniorProject/Controller/Shop/ProductPopUpViewController.swift"
-            timestampString = "547966945.184509"
+            timestampString = "547973087.017838"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "settingsBGTapped(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SeniorProject/Controller/Shop/ProductPopUpViewController.swift"
+            timestampString = "547973087.0183131"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "94"
             endingLineNumber = "94"
+            landmarkName = "settingsBGTapped(sender:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SeniorProject/Controller/Shop/ProductPopUpViewController.swift"
+            timestampString = "547973087.0188"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
             landmarkName = "settingsBGTapped(sender:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1560,70 +1592,6 @@
             startingLineNumber = "64"
             endingLineNumber = "64"
             landmarkName = "viewWillAppear(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SeniorProject/Controller/Cart/UpdatePopUpViewController.swift"
-            timestampString = "547966945.184733"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "deleteProduct(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SeniorProject.UpdatePopUpViewController.deleteProduct(__ObjC.UIButton) -&gt; ()"
-                  moduleName = "SeniorProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ANGIE/Desktop/SeniorProject/SeniorProject/Controller/Cart/UpdatePopUpViewController.swift"
-                  timestampString = "547966719.367133"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "79"
-                  endingLineNumber = "79"
-                  offsetFromSymbolStart = "92">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool) -&gt; () in SeniorProject.UpdatePopUpViewController.deleteProduct(__ObjC.UIButton) -&gt; ()"
-                  moduleName = "SeniorProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ANGIE/Desktop/SeniorProject/SeniorProject/Controller/Cart/UpdatePopUpViewController.swift"
-                  timestampString = "547966719.3690521"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "80"
-                  endingLineNumber = "80"
-                  offsetFromSymbolStart = "36">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SeniorProject/Controller/Cart/UpdatePopUpViewController.swift"
-            timestampString = "547966945.185374"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "deleteProduct(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1666,7 +1634,7 @@
                   moduleName = "SeniorProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ANGIE/Desktop/SeniorProject/SeniorProject/Controller/Cart/CartTabViewController.swift"
-                  timestampString = "547966719.378877"
+                  timestampString = "547971952.009141"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "221"
@@ -1681,7 +1649,7 @@
                   moduleName = "SeniorProject"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/ANGIE/Desktop/SeniorProject/SeniorProject/Controller/Cart/CartTabViewController.swift"
-                  timestampString = "547966719.38176"
+                  timestampString = "547971952.0113389"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "223"
@@ -1762,7 +1730,23 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SeniorProject/Model/Helpers/Helpers.swift"
-            timestampString = "547936146.88018"
+            timestampString = "547973087.019448"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "194"
+            endingLineNumber = "194"
+            landmarkName = "placeOrder(completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SeniorProject/Model/Helpers/Helpers.swift"
+            timestampString = "547973087.019574"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "196"
@@ -1778,23 +1762,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SeniorProject/Model/Helpers/Helpers.swift"
-            timestampString = "547936146.880545"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "198"
-            endingLineNumber = "198"
-            landmarkName = "placeOrder(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SeniorProject/Model/Helpers/Helpers.swift"
-            timestampString = "547936146.880779"
+            timestampString = "547973087.019676"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
@@ -1810,7 +1778,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SeniorProject/Model/Helpers/Helpers.swift"
-            timestampString = "547936146.881004"
+            timestampString = "547973087.019784"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "38"
@@ -1826,7 +1794,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SeniorProject/Model/Helpers/Helpers.swift"
-            timestampString = "547936146.881229"
+            timestampString = "547973087.019883"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "40"
@@ -1842,11 +1810,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SeniorProject/Model/Helpers/Helpers.swift"
-            timestampString = "547936146.881454"
+            timestampString = "547973087.01998"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "228"
-            endingLineNumber = "228"
+            startingLineNumber = "226"
+            endingLineNumber = "226"
             landmarkName = "EmailInvoice(user:model:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1858,11 +1826,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SeniorProject/Model/Helpers/Helpers.swift"
-            timestampString = "547936146.881677"
+            timestampString = "547973087.020079"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "197"
-            endingLineNumber = "197"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
             landmarkName = "placeOrder(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1874,7 +1842,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SeniorProject/Model/Helpers/Helpers.swift"
-            timestampString = "547936146.881902"
+            timestampString = "547973087.020179"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "20"
@@ -1890,7 +1858,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SeniorProject/Model/Helpers/Helpers.swift"
-            timestampString = "547936146.882122"
+            timestampString = "547973087.020274"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
@@ -1906,7 +1874,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SeniorProject/Model/Helpers/Helpers.swift"
-            timestampString = "547936146.8823431"
+            timestampString = "547973087.020367"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "16"
@@ -1922,7 +1890,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SeniorProject/Model/Helpers/Helpers.swift"
-            timestampString = "547936146.882581"
+            timestampString = "547973087.020466"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "17"
@@ -1938,252 +1906,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SeniorProject/Controller/Shop/ProductPopUpViewController.swift"
-            timestampString = "547966945.185928"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "addToCart(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SeniorProject/Controller/Shop/ProductPopUpViewController.swift"
-            timestampString = "547966945.186038"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "addToCart(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "SeniorProject.ProductPopUpViewController.addToCart(__ObjC.UIButton) -&gt; ()"
-                  moduleName = "SeniorProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ANGIE/Desktop/SeniorProject/SeniorProject/Controller/Shop/ProductPopUpViewController.swift"
-                  timestampString = "547966722.743304"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "62"
-                  endingLineNumber = "62"
-                  offsetFromSymbolStart = "1539">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Swift.String&gt;) -&gt; () in SeniorProject.ProductPopUpViewController.addToCart(__ObjC.UIButton) -&gt; ()"
-                  moduleName = "SeniorProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ANGIE/Desktop/SeniorProject/SeniorProject/Controller/Shop/ProductPopUpViewController.swift"
-                  timestampString = "547966722.744956"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "63"
-                  endingLineNumber = "63"
-                  offsetFromSymbolStart = "57">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SeniorProject/Controller/Shop/ProductPopUpViewController.swift"
-            timestampString = "547966945.186146"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "addToCart(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SeniorProject/Controller/Shop/ProductPopUpViewController.swift"
-            timestampString = "547966945.1862561"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
-            landmarkName = "addToCart(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SeniorProject/Controller/Shop/ProductPopUpViewController.swift"
-            timestampString = "547966945.186331"
+            timestampString = "547973087.0205671"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "73"
             endingLineNumber = "73"
             landmarkName = "addToCart(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SeniorProject/Controller/Shop/ProductPopUpViewController.swift"
-            timestampString = "547966945.186426"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
-            landmarkName = "addToCart(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SeniorProject/Controller/Shop/ProductPopUpViewController.swift"
-            timestampString = "547966945.186537"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
-            landmarkName = "addToCart(_:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Swift.String&gt;) -&gt; () in SeniorProject.ProductPopUpViewController.addToCart(__ObjC.UIButton) -&gt; ()"
-                  moduleName = "SeniorProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ANGIE/Desktop/SeniorProject/SeniorProject/Controller/Shop/ProductPopUpViewController.swift"
-                  timestampString = "547966722.775884"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "69"
-                  endingLineNumber = "69"
-                  offsetFromSymbolStart = "357">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Bool, Swift.Optional&lt;Swift.String&gt;) -&gt; () in closure #1 (Swift.Bool, Swift.Optional&lt;Swift.String&gt;) -&gt; () in SeniorProject.ProductPopUpViewController.addToCart(__ObjC.UIButton) -&gt; ()"
-                  moduleName = "SeniorProject"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/ANGIE/Desktop/SeniorProject/SeniorProject/Controller/Shop/ProductPopUpViewController.swift"
-                  timestampString = "547966722.777976"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "70"
-                  endingLineNumber = "70"
-                  offsetFromSymbolStart = "57">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SeniorProject/Model/Helpers/Helpers.swift"
-            timestampString = "547936146.883194"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
-            landmarkName = "addItem_Cart(model:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SeniorProject/Model/Helpers/Helpers.swift"
-            timestampString = "547936146.883417"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "145"
-            endingLineNumber = "145"
-            landmarkName = "addItem_Cart(model:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SeniorProject/Model/Helpers/Helpers.swift"
-            timestampString = "547936146.883637"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
-            landmarkName = "addItem_Cart(model:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SeniorProject/Model/Helpers/Helpers.swift"
-            timestampString = "547936146.883858"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
-            landmarkName = "addItem_Cart(model:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SeniorProject/Model/Helpers/Helpers.swift"
-            timestampString = "547936146.884076"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
-            landmarkName = "addItem_Cart(model:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2305,13 +2033,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SeniorProject/Controller/Shop/ProductPopUpViewController.swift"
-            timestampString = "547966945.186855"
+            filePath = "SeniorProject/Controller/Cart/UpdatePopUpViewController.swift"
+            timestampString = "547973087.021338"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "viewWillAppear(_:)"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "deleteProduct(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -2321,13 +2049,61 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "SeniorProject/Controller/Shop/ProductPopUpViewController.swift"
-            timestampString = "547966945.186945"
+            filePath = "SeniorProject/Controller/Search/SearchViewController.swift"
+            timestampString = "547973087.021462"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
-            landmarkName = "viewWillAppear(_:)"
+            startingLineNumber = "408"
+            endingLineNumber = "408"
+            landmarkName = "metadataOutput(_:didOutput:from:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SeniorProject/Controller/Search/SearchViewController.swift"
+            timestampString = "547973087.02156"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "325"
+            endingLineNumber = "325"
+            landmarkName = "filterByID(searchID:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SeniorProject/Controller/Search/SearchViewController.swift"
+            timestampString = "547973087.021664"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "234"
+            endingLineNumber = "234"
+            landmarkName = "searchBar(_:textDidChange:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SeniorProject/Controller/Search/SearchViewController.swift"
+            timestampString = "547973087.021765"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "tableView(_:cellForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

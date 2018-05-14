@@ -53,7 +53,8 @@
 		FDF17C3220A8DC0500E56C25 /* RegistrationPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF17C3120A8DC0500E56C25 /* RegistrationPageViewController.swift */; };
 		FDF17C3520A8E0CA00E56C25 /* Detail1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF17C3420A8E0CA00E56C25 /* Detail1ViewController.swift */; };
 		FDF17C3720A8E0D700E56C25 /* Detail2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF17C3620A8E0D700E56C25 /* Detail2ViewController.swift */; };
-		FDF17C3B20A92F5100E56C25 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF17C3A20A92F5100E56C25 /* TestViewController.swift */; };
+		FDF17C3B20A92F5100E56C25 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF17C3A20A92F5100E56C25 /* RegisterViewController.swift */; };
+		FDF17C3D20A969FD00E56C25 /* DisplayDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF17C3C20A969FD00E56C25 /* DisplayDetailViewController.swift */; };
 		FDF27CE92096B27A0096110E /* UpdatePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF27CE82096B27A0096110E /* UpdatePopUpViewController.swift */; };
 		FDF27CEB2096E79F0096110E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDF27CEA2096E79F0096110E /* Constants.swift */; };
 /* End PBXBuildFile section */
@@ -110,7 +111,8 @@
 		FDF17C3120A8DC0500E56C25 /* RegistrationPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationPageViewController.swift; sourceTree = "<group>"; };
 		FDF17C3420A8E0CA00E56C25 /* Detail1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail1ViewController.swift; sourceTree = "<group>"; };
 		FDF17C3620A8E0D700E56C25 /* Detail2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail2ViewController.swift; sourceTree = "<group>"; };
-		FDF17C3A20A92F5100E56C25 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		FDF17C3A20A92F5100E56C25 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		FDF17C3C20A969FD00E56C25 /* DisplayDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayDetailViewController.swift; sourceTree = "<group>"; };
 		FDF27CE82096B27A0096110E /* UpdatePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatePopUpViewController.swift; sourceTree = "<group>"; };
 		FDF27CEA2096E79F0096110E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -248,7 +250,8 @@
 			isa = PBXGroup;
 			children = (
 				FD5379E52044C8D6002066BC /* Main.storyboard */,
-				FDF17C3A20A92F5100E56C25 /* TestViewController.swift */,
+				FDF17C3A20A92F5100E56C25 /* RegisterViewController.swift */,
+				FDF17C3C20A969FD00E56C25 /* DisplayDetailViewController.swift */,
 				FD5379EA2044C8D6002066BC /* LaunchScreen.storyboard */,
 			);
 			path = View;
@@ -498,7 +501,8 @@
 				FD96C92B2060B60B000BF16D /* RestAPI.swift in Sources */,
 				FDF27CE92096B27A0096110E /* UpdatePopUpViewController.swift in Sources */,
 				FD179BB3208996140082FFC3 /* KeychainItemAccessibility.swift in Sources */,
-				FDF17C3B20A92F5100E56C25 /* TestViewController.swift in Sources */,
+				FDF17C3D20A969FD00E56C25 /* DisplayDetailViewController.swift in Sources */,
+				FDF17C3B20A92F5100E56C25 /* RegisterViewController.swift in Sources */,
 				FD938E5A2065BFCF00B25C6B /* TabBarViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

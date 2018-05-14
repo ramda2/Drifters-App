@@ -131,8 +131,6 @@ struct Helpers {
             RestApiManager.sharedInstance.PostHTTPRequest(path: path, args: postString) {
                 (json, err) in
 //                print(json)
-//                let status:Bool = json["completed"].boolValue
-//                  print(status)
                 if let alert = json["alert"].string{
                         //                    print(alert)
                     completion(false, alert)
